@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+// public protocol define
+option go_package = ".;protocol";
+
+
+package protocol;
+
+
+message Testx {
+    string uid = 1;
+}
