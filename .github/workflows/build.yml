@@ -24,7 +24,7 @@ jobs:
       - run: cd core
       - run: pwd
       - run: ls
-      - run: gomobile bind -target=ios
+      - run: gomobile bind -target=ios -o core.xcframework
       - run: cd -
       - name: List files in the repository
         run: |
