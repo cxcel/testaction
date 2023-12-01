@@ -22,7 +22,6 @@ jobs:
       - run: go get golang.org/x/mobile/bind
       - run: ls
       - run: gomobile bind -target=ios -ldflags "-w -s" -o core.xcframework ./core/
-      - run: cd -
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
