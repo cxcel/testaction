@@ -3,6 +3,6 @@ package core
 import "fmt"
 
 
-func test() {
+func Test() {
 	fmt.Print("xxx")
 }

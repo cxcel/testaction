@@ -20,11 +20,8 @@ jobs:
       - run: go install golang.org/x/mobile/cmd/gomobile@latest
       - run: gomobile init
       - run: go get golang.org/x/mobile/bind
-      # - run: gomobile bind -target=ios -ldflags "-w -s" -o core.xcframework ./core/
-      - run: cd core
-      - run: pwd
       - run: ls
-      - run: gomobile bind -target=ios -o core.xcframework
+      - run: gomobile bind -target=ios -ldflags "-w -s" -o core.xcframework ./core/
       - run: cd -
       - name: List files in the repository
         run: |
